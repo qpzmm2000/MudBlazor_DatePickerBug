@@ -1,0 +1,11 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+<MudPaper Elevation="0">
+    <MudDatePicker Variant="Variant.Outlined" @bind-Date="date" 
+                   For="@(() => date)" ShowToolbar="false" DateFormat="dd/MM/yy" />
+</MudPaper>
+
+@code {
+    private DateTime? date { get; set; }
+}

@@ -1,0 +1,23 @@
+﻿@inherits LayoutComponentBase
+
+<PageTitle>MudBlazor_DatePickerBug</PageTitle>
+
+<MudThemeProvider />
+<MudPopoverProvider/>
+<MudDialogProvider/>
+<MudSnackbarProvider/>
+
+<MudLayout>
+    <MudAppBar>
+        BlazorApp1
+    </MudAppBar>
+    <MudDrawer Open="true">
+        <NavMenu />
+    </MudDrawer>
+
+    <MudMainContent>
+        <MudContainer Fxied="true">
+            @Body
+        </MudContainer>        
+    </MudMainContent>
+</MudLayout>
